@@ -14,12 +14,11 @@ This is a redesign project that recreates the Headphones website given to us in 
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [License](#license)
 - [Author](#author)
 
 ## Demo
 
-You can see a live demo of the project [here](#).
+You can see a live demo of the project [here](https://bcart01v.github.io/atlas-headphones/).
 
 ## Features
 
@@ -39,11 +38,11 @@ You can see a live demo of the project [here](#).
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/totally-awesome-website.git
+    git clone https://github.com/bcart01v/atlas-headphones.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd totally-awesome-website
+    cd atlas-headphones
     ```
 
 ## Usage
