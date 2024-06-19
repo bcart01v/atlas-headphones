@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Headphones </title>
+  <title>Headphones</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Wrap the header into the first hero, making displaying and moving easier. -->
-  <div class="first_hero">
-  <!-- Header -->
-    <header>
-      <!-- Header Group -->
-      <div class="header_group">
-        <!-- Logo -->
-        <a class="header_logo" href="index.html">
-          <img src="images/logo.png" alt="logo">
-        </a>
-        <!-- Navigation -->
-        <div class="header_navigation">
-          <a href="#">what we do</a>
-          <a href="#">our results</a>
-          <a href="#">contact us</a>
+  <div class="container">
+    <div class="first_hero">
+      <!-- Header -->
+      <header>
+        <!-- Header Group -->
+        <div class="header_group">
+          <!-- Logo -->
+          <a class="header_logo" href="index.html">
+            <img src="images/logo.png" alt="header_logo_large" class="header_logo header_logo_large">
+            <img src="images/headersmall.png" alt="header_logo_small" class="header_logo header_logo_small" id="hamburgerMenu" onclick="toggleMenu()">
+          </a>
+          <!-- Navigation -->
+          <div class="header_navigation" id="navigationMenu">
+            <a href="#what-we-do">what we do</a>
+            <a href="#our-results">our results</a>
+            <a href="#contact-us">contact us</a>
+          </div>
+        </div>
+      </header>
+      <!-- First Group / Lorem Ipsum -->
+      <section class="first_group">
+        <!-- First section, Call to action? -->
+        <div class="first_group_content">
+          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+          <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+          <button class="first_group_button">CALL TO ACTION</button>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </section>
+    </div>
+    <!-- Second Section, what we do -->
+    <section class="second_group" id="what-we-do">
+      <div class="second_group_content">
+        <h2>What we do...</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <!-- Second Section Second Group, row with icons -->
+      <div class="second_group_container">
+        <div class="second_group_row">
+          <img src="images/sound-frecuency.svg" alt="wavelength">
+          <h3>Lorem ipsum</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="second_group_row">
+          <img src="images/video.svg" alt="wavelength">
+          <h3>Lorem ipsum</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="second_group_row">
+          <img src="images/music.svg" alt="wavelength">
+          <h3>Lorem ipsum</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="second_group_row">
+          <img src="images/hearing.svg" alt="wavelength">
+          <h3>Lorem ipsum</h3>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
-    </header>
-    <!-- First Group / Lorem Ipsum -->
-  <section class="first_group">
-    <!-- First section, Call to action? -->
-    <div class="first_group_content">
-      <h1> Lorem ipsum dolor set amet lorem ipsum </h1>
-      <p> Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-      <button class="first_group_button"> CALL TO ACTION </button>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </section>
-  </div>
-  <!-- Second Section, what we do -->
-  <section class="second_group">
-    <div class="second_group_content">
-      <h2> What we do... </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <!-- Second Section Second Group, row with icons -->
-    <div class="second_group_container">
-    <div class="second_group_row">
-      <img src="images/sound-frecuency.svg" alt="wavelength">
-      <h3> Lorem ipsum</h3>
-      <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="second_group_row">
-      <img src="images/video.svg" alt="wavelength">
-      <h3> Lorem ipsum</h3>
-      <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="second_group_row">
-      <img src="images/music.svg" alt="wavelength">
-      <h3> Lorem ipsum</h3>
-      <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="second_group_row">
-      <img src="images/hearing.svg" alt="wavelength">
-      <h3> Lorem ipsum</h3>
-      <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    </div>
     </section>
     <!-- Third Section, our results -->
-    <section class="third_group">
-      <div class="third_group_content">
-        <h2> Our results speak for themselves</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <div class="star_row">
-        <div class="star_row_content">
-          <img src="images/star.svg" alt="star">
-          <h3>+2%</h3>
-          <p>Lorem ipsum dolor</p>
+    <section class="third_group" id="our-results">
+      <div class="third_group_background">
+        <div class="third_group_content">
+          <h2>Our results speak for themselves</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-        <div class="star_row_content">
-          <img src="images/star.svg" alt="star">
-          <h3>+2%</h3>
-          <p>Lorem ipsum dolor</p>
-        </div>
-        <div class="star_row_content">
-          <img src="images/star.svg" alt="star">
-          <h3>+2%</h3>
-          <p>Lorem ipsum dolor</p>
-        </div>
-        <div class="star_row_content">
-          <img src="images/star.svg" alt="star">
-          <h3>+2%</h3>
-          <p>Lorem ipsum dolor</p>
+        <div class="star_row">
+          <div class="star_row_content">
+            <img src="images/star.svg" alt="star">
+            <h3>+2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="star_row_content">
+            <img src="images/star.svg" alt="star">
+            <h3>+2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="star_row_content">
+            <img src="images/star.svg" alt="star">
+            <h3>+2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="star_row_content">
+            <img src="images/star.svg" alt="star">
+            <h3>+2%</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Fourth Section, contact us -->
+    <section class="fourth_group" id="contact-us">
+      <div class="fourth_group_content">
+        <h2>Contact us</h2>
+        <form action="#" method="post">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="text" id="message" name="message" placeholder="Your message" required>
+          <button type="submit">CALL TO ACTION</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer_main">
+      <div class="footer_content">
+        <div class="footer_logo_social">
+          <img src="images/logo.png" alt="logo">
+          <img src="images/social_icons.svg" alt="social_icons">
+        </div>
+        <p>©headphones 2020</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
