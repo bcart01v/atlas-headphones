@@ -1,14 +1,9 @@
-document.getElementById('hamburgerMenu').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    event.stopPropagation();
-    const nav = document.getElementById('navigationMenu');
-    nav.classList.toggle('active');
-});
-
-document.addEventListener('click', function(event) {
-    const nav = document.getElementById('navigationMenu');
-    const isClickInside = nav.contains(event.target) || event.target === document.getElementById('hamburgerMenu');
-    if (!isClickInside) {
-        nav.classList.remove('active');
-    }
-});
+// JavaScript to handle the hamburger menu toggle
+function toggleMenu() {
+    const hamburger = document.getElementById('hamburgerMenu');
+    const navigationMenu = document.getElementById('navigationMenu');
+  
+    hamburger.classList.toggle('change');
+    navigationMenu.classList.toggle('active');
+  }
+  
